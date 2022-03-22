@@ -2273,55 +2273,6 @@ section.lazy-placeholder:after {
   content: "* ";
   display: inline;
 }
-.cid-sQeQE7kwZz {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-image: url("../../../assets/images/mbr-1920x1217.jpg");
-}
-.cid-sQeQE7kwZz .mbr-iconfont {
-  font-size: 1.4rem !important;
-  font-family: 'Moririse2' !important;
-  color: #4f87fb;
-  margin-left: 1rem;
-  border-radius: 3rem;
-  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
-  padding: 1.5rem;
-}
-.cid-sQeQE7kwZz .panel-group {
-  border: none;
-}
-.cid-sQeQE7kwZz .panel-collapse {
-  padding: 0 2rem;
-}
-.cid-sQeQE7kwZz .panel-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 3rem;
-  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
-  padding: 2rem;
-}
-.cid-sQeQE7kwZz .panel-body,
-.cid-sQeQE7kwZz .card-header {
-  padding: 1rem 0;
-}
-.cid-sQeQE7kwZz .panel-title-edit {
-  color: #6c758f;
-}
-.cid-sQeQE7kwZz .card .card-header {
-  background-color: transparent;
-  margin-bottom: 0;
-  border: 0;
-}
-.cid-sQeQE7kwZz .card {
-  overflow: visible;
-}
-.cid-sQeQE7kwZz .panel-text {
-  color: #6c758f;
-}
-.cid-sQeQE7kwZz H3 {
-  color: #36187d;
-}
 .is-builder .cid-sSevH7pdk2 .navbar {
   padding-top: 20px !important;
 }
