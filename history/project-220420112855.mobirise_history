@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "implantaire.html",
+    "currentPage": "agenesie-dentaire.html",
     "theme": {
       "name": "medicalm4",
       "title": "MedicalM4",
@@ -6682,18 +6682,18 @@
               }
             },
             ".mbr-list": {
-              "color": "#6c758f"
+              "color": "#777777"
             },
             ".mbr-section-title": {
               "color": "#36187d"
             }
           },
           "_cid": "t3x8r2ZmXg",
-          "_anchor": "list05-3b",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "list05-3b"
         },
         {
           "_name": "article1",
