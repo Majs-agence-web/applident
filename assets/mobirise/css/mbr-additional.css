@@ -10481,6 +10481,7 @@ section.lazy-placeholder:after {
   border-radius: 8px;
   position: relative;
   overflow: hidden;
+  height: 134px;
 }
 .cid-rSbeuR6ejM .row-item .wrapper::before {
   border-radius: 8px;
