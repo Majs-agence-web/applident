@@ -49,8 +49,8 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 154,
-    "versionPublish": "5.6.8",
+    "uniqCompNum": 132,
+    "versionPublish": "5.6.5",
     "screenshot": "screenshot.png"
   },
   "pages": {
@@ -469,9 +469,44 @@
           },
           "_name": "content1",
           "_sourceTheme": "petsm4",
-          "_customHTML": "<section group=\"Content\" class=\"content1 petsm4_content1\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Col 1 Items\" name=\"menuItems1\" min=\"1\" max=\"10\" step=\"1\" value=\"4\">\n\t\t<input type=\"range\" inline title=\"Col 2 Items\" name=\"menuItems2\" min=\"1\" max=\"10\" step=\"1\" value=\"3\">\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n\t\t<input type=\"color\" name=\"IconsColor\" title=\"Icons Color\" value=\"#007bff\" selected>\n\t\t<input type=\"color\" name=\"IconsColor2\" title=\"Icons Hover Color\" value=\"#181818\" selected>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/petsm4/components/_images/background1.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#f2f3f7\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div class=\"container\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md-6 col-lg-6 md-pb\">\n\t\t\t\t<h3 class=\"col-title1 mbr-bold align-left pb-4 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".col-title1\">Dogs</h3>\n\t\t\t\t<ul class=\"list\" mbr-list mbr-list-grow=\"menuItems1\">\n\t\t\t\t\t<li class=\"item-wrap\">\n\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mbrib-success  \" style=\"color: rgb(118, 118, 118); fill: rgb(118, 118, 118);\"></span>\n\t\t\t\t\t\t<h4 mbr-text class=\"item1 mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item1\">Des retards de formation ou d’éruption d’autres dents, en particulier des prémolaires et molaires.&nbsp;</h4>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"item-wrap\">\n\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mbrib-success  \" style=\"color: rgb(118, 118, 118); fill: rgb(118, 118, 118);\"></span>\n\t\t\t\t\t\t<h4 mbr-text class=\"item1 mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item1\">Des anomalies de taille des dents présentes : le plus souvent une microdontie caractérisée par une diminution de la taille normale des dents ou plus rarement une macrodontie (accroissement exagéré de la taille normale des dents).&nbsp;</h4>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"item-wrap\">\n\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mbrib-success  \" style=\"color: rgb(118, 118, 118); fill: rgb(118, 118, 118);\"></span>\n\t\t\t\t\t\t<h4 mbr-text class=\"item1 mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item1\">Des anomalies de forme des dents présentes par exemple des dents conoïdes.</h4>\n\t\t\t\t\t</li>\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t<li class=\"item-wrap\">\n\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mbrib-success  \" style=\"color: rgb(118, 118, 118); fill: rgb(118, 118, 118);\"></span>\n\t\t\t\t\t\t<h4 mbr-text class=\"item1 mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item1\">Des anomalies de forme des dents présentes par exemple des dents conoïdes.</h4>\n\t\t\t\t\t</li></ul>\n\t\t\t</div>\n\n\t\t\t<div class=\"col-12 col-md-6 col-lg-6 md-pb\">\n\t\t\t\t<h3 class=\"col-title2 mbr-bold align-left pb-4 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".col-title2\">Cats</h3>\n\t\t\t\t<ul class=\"list\" mbr-list mbr-list-grow=\"menuItems2\">\n\t\t\t\t\t<li class=\"item-wrap\">\n\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mbrib-success  \" style=\"color: rgb(118, 118, 118); fill: rgb(118, 118, 118);\"></span>\n\t\t\t\t\t\t<h4 mbr-text class=\"item1 mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item1\">Un encombrement ou des anomalies de position des autres dents.</h4>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"item-wrap\">\n\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mbrib-success  \" style=\"color: rgb(118, 118, 118); fill: rgb(118, 118, 118);\"></span>\n\t\t\t\t\t\t<h4 mbr-text class=\"item1 mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item1\">Des anomalies de structure par exemple des hypoplasies de l’émail (taches blanches).</h4>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"item-wrap\">\n\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mbrib-success  \" style=\"color: rgb(118, 118, 118); fill: rgb(118, 118, 118);\"></span>\n\t\t\t\t\t\t<h4 mbr-text class=\"item1 mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item1\">Une altération de la croissance crânio-faciale : l'absence de développement de la hauteur d'os alvéolaire et une réduction de la hauteur de l’étage inférieur de la face.</h4>\n\t\t\t\t\t</li>\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_customHTML": "<section group=\"Content\" class=\"content1 petsm4_content1\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Col 1 Items\" name=\"menuItems1\" min=\"1\" max=\"10\" step=\"1\" value=\"4\">\n\t\t<input type=\"range\" inline title=\"Col 2 Items\" name=\"menuItems2\" min=\"1\" max=\"10\" step=\"1\" value=\"3\">\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n\t\t<input type=\"color\" name=\"IconsColor\" title=\"Icons Color\" value=\"#007bff\" selected>\n\t\t<input type=\"color\" name=\"IconsColor2\" title=\"Icons Hover Color\" value=\"#181818\" selected>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/petsm4/components/_images/background1.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#f2f3f7\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div class=\"container\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md-6 col-lg-6 md-pb\">\n\t\t\t\t<h3 class=\"col-title1 mbr-bold align-left pb-4 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".col-title1\">Dogs</h3>\n\t\t\t\t<ul class=\"list\" mbr-list mbr-list-grow=\"menuItems1\">\n\t\t\t\t\t<li class=\"item-wrap\">\n\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mbrib-success  \" style=\"color: rgb(118, 118, 118); fill: rgb(118, 118, 118);\"></span>\n\t\t\t\t\t\t<h4 mbr-text class=\"item1 mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item1\">Des retards de formation ou d’éruption d’autres dents, en particulier des prémolaires et molaires.&nbsp;</h4>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"item-wrap\">\n\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mbrib-success  \" style=\"color: rgb(118, 118, 118); fill: rgb(118, 118, 118);\"></span>\n\t\t\t\t\t\t<h4 mbr-text class=\"item1 mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item1\">Des anomalies de taille des dents présentes : le plus souvent une microdontie caractérisée par une diminution de la taille normale des dents ou plus rarement une macrodontie (accroissement exagéré de la taille normale des dents).&nbsp;</h4>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"item-wrap\">\n\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mbrib-success  \" style=\"color: rgb(118, 118, 118); fill: rgb(118, 118, 118);\"></span>\n\t\t\t\t\t\t<h4 mbr-text class=\"item1 mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item1\">Des anomalies de forme des dents présentes par exemple des dents conoïdes.</h4>\n\t\t\t\t\t</li>\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t<li class=\"item-wrap\">\n\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mbrib-success  \" style=\"color: rgb(118, 118, 118); fill: rgb(118, 118, 118);\"></span>\n\t\t\t\t\t\t<h4 mbr-text class=\"item1 mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item1\">Des anomalies de morphologie par exemple des racines.&nbsp;</h4>\n\t\t\t\t\t</li></ul>\n\t\t\t</div>\n\n\t\t\t<div class=\"col-12 col-md-6 col-lg-6 md-pb\">\n\t\t\t\t<h3 class=\"col-title2 mbr-bold align-left pb-4 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".col-title2\">Cats</h3>\n\t\t\t\t<ul class=\"list\" mbr-list mbr-list-grow=\"menuItems2\">\n\t\t\t\t\t<li class=\"item-wrap\">\n\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mbrib-success  \" style=\"color: rgb(118, 118, 118); fill: rgb(118, 118, 118);\"></span>\n\t\t\t\t\t\t<h4 mbr-text class=\"item1 mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item1\">Un encombrement ou des anomalies de position des autres dents.</h4>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"item-wrap\">\n\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mbrib-success  \" style=\"color: rgb(118, 118, 118); fill: rgb(118, 118, 118);\"></span>\n\t\t\t\t\t\t<h4 mbr-text class=\"item1 mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item1\">Des anomalies de structure par exemple des hypoplasies de l’émail (taches blanches).</h4>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"item-wrap\">\n\t\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont mbrib-success  \" style=\"color: rgb(118, 118, 118); fill: rgb(118, 118, 118);\"></span>\n\t\t\t\t\t\t<h4 mbr-text class=\"item1 mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item1\">Une altération de la croissance crânio-faciale : l'absence de développement de la hauteur d'os alvéolaire et une réduction de la hauteur de l’étage inférieur de la face.</h4>\n\t\t\t\t\t</li>\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
           "_cid": "sYalhNlGQa",
           "_anchor": "content1-2w",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "article01",
+          "_sourceTheme": "pizzam5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article01\" group=\"Article\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Text</header>\n        <input type=\"color\" title=\"Colored\" value=\"#36187d\" name=\"coloredTextColor\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/pizzam5/components/_images/image9.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#f2f3f7\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#414142\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"px-0 px-sm-3\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div mbr-if=\"showTitle\" class=\"row mx-0 mx-sm-5 mb-1\">\n            <div class=\"col-12 mb-5 px-sm-3\">\n                <h3 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\" data-app-placeholder=\"Type Text\">\n                    <i class=\"colored-text\">We put 100% of love</i> and\n                    dedication into our dishes\n                </h3>\n            </div>\n        </div>\n        <div class=\"row mx-0 mx-sm-5\">\n            <div class=\"col-12 px-sm-3\">\n                <h4 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle mbr-fonts-style pb-2\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\" data-app-placeholder=\"Type Text\">Le traitement, la prise en charge, la prévention</h4>\n                <p mbr-if=\"showText\" class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-app-placeholder=\"Type Text\">La présence d’une oligodontie peut représenter un signe d’appel d’une maladie plus générale et doit faire rechercher en particulier des signes associés. Cette anomalie doit être rapportée au médecin (pédiatre, médecin généraliste, généticien...). Ce diagnostic médical, conforté par les observations du Chirurgien-Dentiste, est important pour le patient et sa famille. Du point de vue de la prise en charge bucco-dentaire, la prévention avec la mise en place d’un programme de santé bucco-dentaire, la préservation du capital dentaire et la prise en charge pluridisciplinaire de ces anomalies dentaires sont des éléments indispensables d’un <a href=\"index.html#features9-5\" class=\"text-primary\">traitement </a>réussi. L’un des objectifs essentiels est de favoriser l’intégration scolaire et sociale des patients. A titre d’exemple, la réhabilitation prothétique d’un enfant atteint d’oligodontie commence dès l’âge de 3 ans, les prothèses étant remplacées au fur et à mesure de la croissance.\n<br>\n<br>Les thérapeutiques implanto-prothétiques font l’objet depuis quelques années d’une prise en charge par la sécurité sociale au titre d’une ALD (affection longue durée).\n<br>\n<br>Il existe donc des possibilités de remboursement ces thérapeutiques implantaires :\n<br>\n<br>• avant la fin de la croissance (2 à 4 implants en zone symphysaire)\n<br>• après la fin de la croissance (10 implants maxillaire / mandibulaire).\n<br>\n<br>Il est nécessaire pour cela de faire une demande auprès de son médecin traitant, et de prendre attache auprès d’un centre expert pour faire le diagnostic et d’évaluer le processus de prise en charge ou plan de traitement. (nous abons sur notre plateforme une aide au remplissage)</p><p></p><p></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            ".colored-text": {
+              "color": "@coloredTextColor !important"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#36187d"
+            },
+            ".mbr-text": {
+              "color": "#6c758f"
+            },
+            "P": {
+              "color": "#6c758f"
+            }
+          },
+          "_cid": "sQwaFdCSao",
+          "_anchor": "article01-o",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -1270,379 +1305,6 @@
           "_global": true,
           "_once": "menu",
           "_params": {}
-        },
-        {
-          "_name": "list01",
-          "_sourceTheme": "securem4",
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = \"image\")": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = \"color\")": {
-              "background-color": "@bg-value"
-            },
-            "ul": {
-              "list-style": "none",
-              "margin": "0",
-              "padding-left": "2.5rem"
-            },
-            "li": {
-              "position": "relative",
-              "margin-bottom": "1rem"
-            },
-            "ul li::before": {
-              "position": "absolute",
-              "left": "-1.6rem",
-              "content": "\"\\2022\"",
-              "color": "@primaryColor",
-              "font-weight": "bold",
-              "font-size": "2rem",
-              "width": "1.6rem"
-            },
-            "H3": {
-              "color": "#36187d"
-            },
-            ".list": {
-              "color": "#6c758f"
-            }
-          },
-          "_customHTML": "<section group=\"List\" class=\"list1\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"11\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#f2f3f7\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">Le traitement, la prise en charge, la prévention</h3>\n                <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list\" data-multiline mbr-article><div>La présence d’une oligodontie peut représenter un signe d’appel d’une maladie plus générale et doit faire rechercher en particulier des signes associés. Cette anomalie doit être rapportée au médecin (pédiatre, médecin généraliste, généticien...). Ce diagnostic médical, conforté par les observations du Chirurgien-Dentiste, est important pour le patient et sa famille. Du point de vue de la prise en charge bucco-dentaire, la prévention avec la mise en place d’un programme de santé bucco-dentaire, la préservation du capital dentaire et la prise en charge pluridisciplinaire de ces anomalies dentaires sont des éléments indispensables d’un traitement réussi. L’un des objectifs essentiels est de favoriser l’intégration scolaire et sociale des patients. A titre d’exemple, la réhabilitation prothétique d’un enfant atteint d’oligodontie commence dès l’âge de 3 ans, les prothèses étant remplacées au fur et à mesure de la croissance.</div><div><b><br></b></div><div>Les thérapeutiques implanto-prothétiques font l’objet depuis quelques années d’une prise en charge par la sécurité sociale au titre d’une ALD (affection longue durée).</div></ul>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "list01-43",
-          "_isUserblock": true,
-          "_cid": "t6nMxvcWkr",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_name": "list01",
-          "_sourceTheme": "securem4",
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = \"image\")": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = \"color\")": {
-              "background-color": "@bg-value"
-            },
-            "ul": {
-              "list-style": "none",
-              "margin": "0",
-              "padding-left": "2.5rem"
-            },
-            "li": {
-              "position": "relative",
-              "margin-bottom": "1rem"
-            },
-            "ul li::before": {
-              "position": "absolute",
-              "left": "-1.6rem",
-              "content": "\"\\2022\"",
-              "color": "@primaryColor",
-              "font-weight": "bold",
-              "font-size": "2rem",
-              "width": "1.6rem"
-            },
-            "H3": {
-              "color": "#36187d"
-            },
-            ".list": {
-              "color": "#6c758f"
-            }
-          },
-          "_customHTML": "<section group=\"List\" class=\"list1\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"11\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#f2f3f7\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">La prise en charge en « ALD »</h3>\n                <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list\" data-multiline mbr-article><div>Les patients atteints d'affections de longue durée voient leurs soins pris en charge à 100% par l'Assurance Maladie (\"exonération du ticket modérateur\").</div><div><br></div><div> \n</div><div><b>Les agénésies dentaires multiples (\"oligodontie\") font partie des affections hors liste.</b></div><div><b><br></b></div><div><b>\n</b></div><div>Les affections dites « hors liste » (ALD 31)  concernent les patients atteints d'une forme grave d'une maladie, ou d'une forme évolutive ou invalidante d'une maladie grave, ne figurant pas sur la liste des ALD 30. Elles comportent un traitement prolongé d'une durée prévisible supérieure à six mois et une thérapeutique particulièrement coûteuse.\n</div><div><b><br></b></div></ul>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "list01-44",
-          "_isUserblock": true,
-          "_cid": "t6nMRbi5ga",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_name": "list01",
-          "_sourceTheme": "securem4",
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = \"image\")": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = \"color\")": {
-              "background-color": "@bg-value"
-            },
-            "ul": {
-              "list-style": "none",
-              "margin": "0",
-              "padding-left": "2.5rem"
-            },
-            "li": {
-              "position": "relative",
-              "margin-bottom": "1rem"
-            },
-            "ul li::before": {
-              "position": "absolute",
-              "left": "-1.6rem",
-              "content": "\"\\2022\"",
-              "color": "@primaryColor",
-              "font-weight": "bold",
-              "font-size": "2rem",
-              "width": "1.6rem"
-            },
-            "H3": {
-              "color": "#36187d"
-            },
-            ".list": {
-              "color": "#6c758f"
-            }
-          },
-          "_customHTML": "<section group=\"List\" class=\"list1\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"11\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#f2f3f7\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">Pris en charge chez l'enfant de plus de six ans</h3>\n                <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list\" data-multiline mbr-article>Depuis le 28 juin 2007, les actes du traitement implanto-prothétique des agénésies dentaires multiples liés à une maladie rare, chez l'enfant de plus de 6 ans et jusqu'à la fin de la croissance, sont pris en charge par l'Assurance Maladie.<div>Tous les moyens de diagnostic sont pris en charge, comme le scanner ou le cône beam ; 2 à 4 implants dentaires dans le secteur mandibulaire antérieur (en avant de la mâchoire du bas) en cas d’instabilité ou d’échec de prothèse du bas ; ainsi que la prothèse qui est stabilisée sur ces implants avec les moyens de rétention comme les « bouton-pression ». Le suivi indispensable pendant la croissance du patient est également pris en charge à 100%.</div><div><br><div><b><br></b></div></div></ul>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "list01-45",
-          "_isUserblock": true,
-          "_cid": "t6nNajeEoB",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_name": "list01",
-          "_sourceTheme": "securem4",
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = \"image\")": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = \"color\")": {
-              "background-color": "@bg-value"
-            },
-            "ul": {
-              "list-style": "none",
-              "margin": "0",
-              "padding-left": "2.5rem"
-            },
-            "li": {
-              "position": "relative",
-              "margin-bottom": "1rem"
-            },
-            "ul li::before": {
-              "position": "absolute",
-              "left": "-1.6rem",
-              "content": "\"\\2022\"",
-              "color": "@primaryColor",
-              "font-weight": "bold",
-              "font-size": "2rem",
-              "width": "1.6rem"
-            },
-            "H3": {
-              "color": "#36187d"
-            },
-            ".list": {
-              "color": "#6c758f"
-            }
-          },
-          "_customHTML": "<section group=\"List\" class=\"list1\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"11\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#f2f3f7\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">Prise en charge chez l'adulte</h3>\n                <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list\" data-multiline mbr-article><div>Depuis le 9 janvier 2012, les actes du traitement implanto-prothétique des agénésies dentaires multiples liées à une maladie rare chez l'adulte sont pris en charge par l'Assurance Maladie.\n</div><div>Tous les moyens de diagnostic sont pris en charge, comme le scanner ou le cône beam ; mais aussi la chirurgie pré-implantaire comme les greffes osseuses ; et jusqu’à 10 implants dentaires ainsi que les moyens de liaisons et les prothèses supra-implantaires.\n</div><div>Le traitement orthodontique n’entre pas dans le champs de l’ALD : il bénéficie d’une prise en charge classique par la sécurité sociale ( entente préalable à faire par l’orthodontiste) et votre éventuelle complémentaire. De même, les couronnes fixées sur implants ne bénéficient pas aujourd’hui de la prise en charge à 100% : il convient donc de se faire établir un devis et d’interroger sa mutuelle.\n</div><div><b><br></b></div></ul>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "list01-46",
-          "_isUserblock": true,
-          "_cid": "t6nNx0Vjan",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".title-text": {
-              ".mbr-section-subtitle": {
-                "color": "#4f87fb",
-                "font-weight": "800"
-              },
-              ".mbr-section-subtitle.display-4": {
-                "font-size": "13px",
-                "line-height": "1.85",
-                "letter-spacing": "2px"
-              },
-              ".mbr-section-title": {
-                "color": "#130947",
-                "span": {
-                  "font-weight": "900"
-                }
-              },
-              ".mbr-section-title.display-2": {
-                "line-height": "1.2",
-                "letter-spacing": "-0.5px"
-              },
-              "margin-bottom": "70px"
-            },
-            ".mbr-iconfont": {
-              "font-family": "'Moririse2' !important",
-              "display": "inline-flex",
-              "-webkit-transform-origin": "",
-              "transform-origin": "",
-              "-webkit-transform": "rotate(45deg)",
-              "transform": "rotate(45deg)",
-              "-webkit-transition": "all 0.3s",
-              "transition": "all 0.3s",
-              "padding": "0 !important",
-              "font-size": "1.4rem !important",
-              "color": "@iconColor",
-              "&:before": {
-                "-webkit-transform": "scaleY(0) !important",
-                "transform": "scaleY(0) !important",
-                "-webkit-transition": "all 0.3s",
-                "transition": "all 0.3s"
-              }
-            },
-            ".collapsed": {
-              ".mbr-iconfont": {
-                "-webkit-transform": "rotate(0deg)",
-                "transform": "rotate(0deg)",
-                "&:before": {
-                  "-webkit-transform": "scaleY(1) !important",
-                  "transform": "scaleY(1) !important",
-                  "-webkit-transition": "all 0.3s",
-                  "transition": "all 0.3s"
-                }
-              }
-            },
-            ".accordion-content": {
-              "flex-basis": "100%"
-            },
-            ".panel-group": {
-              "width": "100%"
-            },
-            ".panel-text, .header-text, .mbr-section-subtitle": {
-              "color": "#222222"
-            },
-            ".card": {
-              "margin-bottom": "30px",
-              "margin-top": "30px",
-              "border": "none",
-              "border-radius": "0 !important",
-              ".card-header": {
-                "border-radius": "0 !important",
-                "border-bottom": "none !important",
-                "padding": "0",
-                "a.panel-title": {
-                  "-webkit-box-pack": "justify",
-                  "justify-content": "space-between",
-                  "-webkit-transition": "all 0.3s",
-                  "transition": "all 0.3s",
-                  "background-color": "@accordionColor",
-                  "margin-bottom": "0",
-                  "font-style": "normal",
-                  "display": "flex",
-                  "-webkit-box-align": "center",
-                  "align-items": "center",
-                  "text-decoration": "none !important",
-                  "border-radius": "0 !important",
-                  "line-height": "normal",
-                  "&:focus": {
-                    "text-decoration": "none !important"
-                  },
-                  ".sign": {
-                    "padding-right": "1rem"
-                  },
-                  "h4": {
-                    "padding": "17px 42px 17px 35px",
-                    "margin-bottom": "0",
-                    "width": "100%",
-                    "line-height": "1.5",
-                    "font-weight": "400 !important",
-                    ".sign": {
-                      "padding-right": "1rem",
-                      "line-height": "1.6 !important"
-                    }
-                  },
-                  ".toggle-icon": {
-                    "right": "20px",
-                    "position": "absolute",
-                    "top": "29px",
-                    "-webkit-transform": "none",
-                    "transform": "none",
-                    "display": "inline-block",
-                    "height": "2px",
-                    "margin-left": "0",
-                    "width": "12px",
-                    "&:before, &:after": {
-                      "background": "currentColor",
-                      "border": "0",
-                      "box-sizing": "border-box",
-                      "content": "''",
-                      "display": "block",
-                      "left": "50%",
-                      "position": "absolute",
-                      "top": "50%"
-                    },
-                    "&:before": {
-                      "height": "12px",
-                      "margin-left": "-1px !important",
-                      "width": "2px",
-                      "margin-top": "-6px",
-                      "background-color": "currentColor",
-                      "border": "0",
-                      "-webkit-transform": "none",
-                      "transform": "none"
-                    },
-                    "&:after": {
-                      "height": "2px",
-                      "width": "12px",
-                      "margin-left": "-6px",
-                      "margin-top": "-1px"
-                    }
-                  },
-                  "&[aria-expanded='true']": {
-                    "background-color": "@activePanelColor",
-                    "-webkit-transition": "all 0.3s",
-                    "transition": "all 0.3s",
-                    ".header-text, .sign": {
-                      "color": "contrast(@activePanelColor) !important",
-                      "-webkit-transition": "all 0.3s",
-                      "transition": "all 0.3s"
-                    }
-                  }
-                }
-              },
-              ".panel-body": {
-                "background": "@panelColor",
-                "padding": "30px 55px 35px 40px !important",
-                ".display-4": {
-                  "font-size": "16px"
-                }
-              }
-            }
-          },
-          "_name": "accordion2",
-          "_sourceTheme": "medicalm4",
-          "_customHTML": "<section class=\"accordion2 medicalm4_accordion2\" group=\"Accordions\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\">\n\t\t<select title=\"Accordions Count\" name=\"bootstrapAccordion\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\" selected>3</option>\n\t\t\t<option value=\"4\">4</option>\n\t\t\t<option value=\"5\">5</option>\n\t\t\t<option value=\"6\">6</option>\n\t\t</select>\n\t\t<hr>\n\t\t<input type=\"color\" title=\"Accordion Color\" name=\"accordionColor\" value=\"#4f87fb\">\n\t\t<input type=\"color\" title=\"Panel Color\" name=\"panelColor\" value=\"#ffffff\">\n\t\t<input type=\"color\" title=\"Active Panel Color\" name=\"activePanelColor\" value=\"#4f87fb\">\n\n\t\t<input type=\"color\" name=\"iconColor\" title=\"Icons\" value=\"#222222\" selected>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Background Color\" value=\"#f2f3f7\" selected>\n\t\t\t<input type=\"video\" title=\"Background Video\" value=\"https://youtu.be/iM-NestDPNQ\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay&&bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\t<div class=\"container\">\n\t\t<div class=\"col-12 col-md-12 title-text\">\n\t\t\t<h3 class=\"mbr-section-subtitle mbr-fonts-style align-center mbr-bold\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".title-text .mbr-section-subtitle\">Les démarches pour établir le dossier ALD&nbsp;</h3>\n\n\t\t\t<h2 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".title-text .mbr-section-title\">Foire aux questions</h2>\n\t\t\t<p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".title-text .mbr-text\" data-multiline mbr-if=\"showText\">\n\t\t\t\tEtiam non purus eros. Nam convallis lectus at felis faucibus, commodo vestibulum magna laoreet.\n\t\t\t\tAenean nec\n\t\t\t\tsem semper sem ultricies interdum.</p>\n\t\t</div>\n\t\t<div class=\"row justify-content-center\" mbr-class=\"{'pt-4':showTitle || showSubtitle}\">\n\t\t\t<div class=\"col-md-12 content-block\">\n\t\t\t\t<div class=\"accordion-content\">\n\t\t\t\t\t<div id=\"bootstrap-accordion\" class=\"panel-group accordionStyles accordion \" role=\"tablist\" aria-multiselectable=\"true\">\n\t\t\t\t\t\t<div class=\"card\">\n\t\t\t\t\t\t\t<div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n\t\t\t\t\t\t\t\t<a role=\"button\" class=\"collapsed panel-title\" data-toggle=\"collapse\" data-core href=\"#collapse1\" aria-expanded=\"false\" aria-controls=\"collapse1\">\n\t\t\t\t\t\t\t\t\t<h4 class=\"mbr-fonts-style header-text\" mbr-theme-style=\"display-7\" data-app-selector=\".header-text\">Qui peut établir la demande ?&nbsp;<br><span class=\"toggle-icon inactive sign mbr-iconfont\"></span>\n\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div id=\"collapse1\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\">\n\t\t\t\t\t\t\t\t<div class=\"panel-body p-4\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style panel-text mbr-text\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-text\">•\tun praticien hospitalier d'un centre de référence ou de compétence (avec le tampon du CRMR ou CCMR).<br>\n<br>•\tun chirurgien-dentiste, un stomatologue ou un chirurgien oral: dans ce cas la demande doit être également signée par le médecin traitant&nbsp;<br></p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div class=\"card\" mbr-if=\"bootstrapAccordion > 1\">\n\t\t\t\t\t\t\t<div class=\"card-header\" role=\"tab\" id=\"headingTwo\">\n\t\t\t\t\t\t\t\t<a role=\"button\" class=\"collapsed panel-title\" data-toggle=\"collapse\" data-core href=\"#collapse2\" aria-expanded=\"false\" aria-controls=\"collapse2\">\n\t\t\t\t\t\t\t\t\t<h4 class=\"mbr-fonts-style header-text\" mbr-theme-style=\"display-7\" data-app-selector=\".header-text\">Quelles sont les pièces administratives nécessaires à la demande ALD?<br><span class=\"toggle-icon inactive sign mbr-iconfont\"></span>\n\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t</a>\n\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div id=\"collapse2\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingTwo\" data-parent=\"#accordion\">\n\t\t\t\t\t\t\t\t<div class=\"panel-body p-4\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style panel-text mbr-text\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-text\">1. U<b>n formulaire de Protocole de soins</b>: la pathologie doit être identifiée par le praticien avec des arguments cliniques et génétiques; les spécialités pharmaceutiques doivent être précisées (implants ostéointégrés selon CCAM pour le traitements des agénésies multiples liées à une maladie rare). Les différents spécialistes devant intervenir doivent être précisés; la durée prévisible des soins doit être mentionnée.\n<br>\n<br>2. U<b>n formulaire d'Aide au remplissage</b>: le praticien ( chirurgien-dentiste ou centre expert) y précise la formule dentaire avec identification des agénésies; les examens d'imagerie préconisés; les principales étapes thérapeutiques doivent aussi être précisées. Il convient d’utiliser le formulaire « enfant » jusqu’à l’âge de 15 ans et le formulaire « adulte » ensuite (plus de 15 ans).\n<br>\n<br>\n<br>3. <b>Une radiographie panoramique</b> récente (moins de 6 mois) de bonne qualité \n<br>\n<br>a. <b>Une radiographie de poignet</b> pour les enfants proches de la fin de la croissance peut être nécessaire afin d'évaluer la maturité squelettique.<br>\n<br>b.\t<b>Une attestation de Maladie</b> rare peut être nécessaire si la demande n’est pas visée par un centre expert.&nbsp;<br></p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div class=\"card\" mbr-if=\"bootstrapAccordion > 2\">\n\t\t\t\t\t\t\t<div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n\t\t\t\t\t\t\t\t<a role=\"button\" class=\"collapsed panel-title\" data-toggle=\"collapse\" data-core href=\"#collapse3\" aria-expanded=\"false\" aria-controls=\"collapse3\">\n\t\t\t\t\t\t\t\t\t<h4 class=\"mbr-fonts-style header-text\" mbr-theme-style=\"display-7\" data-app-selector=\".header-text\">A qui adresser la demande ?<br><span class=\"toggle-icon inactive sign mbr-iconfont\"></span>\n\t\t\t\t\t\t\t\t\t</h4>\n\n\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div id=\"collapse3\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\" data-parent=\"#accordion\">\n\t\t\t\t\t\t\t\t<div class=\"panel-body p-4\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style panel-text mbr-text\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-text\">La demande ALD et les pièces justificatives sont à envoyer à la CPAM dont relève le patient. Elle sera examinée par le médecin-conseil.\n<br>\n<br>Les services administratifs de la caisse d'Assurance Maladie du patient lui notifie la décision prise par le médecin conseil :<br>\n<br>• En cas d'avis favorable, le volet 3 du protocole de soins, mentionnant l'accord de prise en charge, sera remis au patient. La réalisation du traitement implantaire pourra alors débuter.<br>\n<br>• En cas de non acceptation du protocole de soins ou de refus de prise en charge des actes et traitements à réaliser dans le cadre des agénésies, les voies de recours seront indiquées sur la notification de décision.\n<br>Des renseignements complémentaires sont disponibles sur le site <a href=\"https://www.ameli.fr/\" class=\"text-primary\" target=\"_blank\">ameli.fr</a>.&nbsp;<br></p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div class=\"card\" mbr-if=\"bootstrapAccordion > 3\">\n\t\t\t\t\t\t\t<div class=\"card-header\" role=\"tab\" id=\"headingFour\">\n\t\t\t\t\t\t\t\t<a role=\"button\" class=\"collapsed panel-title\" data-toggle=\"collapse\" data-core href=\"#collapse4\" aria-expanded=\"false\" aria-controls=\"collapse4\">\n\t\t\t\t\t\t\t\t\t<h4 class=\"mbr-fonts-style header-text\" mbr-theme-style=\"display-7\" data-app-selector=\".header-text\">\n\t\t\t\t\t\t\t\t\t\t4. Are foods that contain sugar unhealthy? <span class=\"toggle-icon inactive sign mbr-iconfont\"></span>\n\t\t\t\t\t\t\t\t\t</h4>\n\n\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div id=\"collapse4\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingFour\" data-parent=\"#accordion\">\n\t\t\t\t\t\t\t\t<div class=\"panel-body p-4\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style panel-text mbr-text\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-text\">\n\t\t\t\t\t\t\t\t\t\tLorem Ipsum dolor sit amet, consectetur adipisicing elit. Voluptate veniam\n\t\t\t\t\t\t\t\t\t\taccusamus eaque recusandae modi velit a praesentium ipsa animi facilis\n\t\t\t\t\t\t\t\t\t\trepellendus magnam aliquam, numquam debitis fuga laboriosam, quos aut adipisci.\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div class=\"card\" mbr-if=\"bootstrapAccordion > 4\">\n\t\t\t\t\t\t\t<div class=\"card-header\" role=\"tab\" id=\"headingFive\">\n\t\t\t\t\t\t\t\t<a role=\"button\" class=\"collapsed panel-title\" data-toggle=\"collapse\" data-core href=\"#collapse5\" aria-expanded=\"false\" aria-controls=\"collapse5\">\n\t\t\t\t\t\t\t\t\t<h4 class=\"mbr-fonts-style header-text\" mbr-theme-style=\"display-7\" data-app-selector=\".header-text\">\n\t\t\t\t\t\t\t\t\t\t5. What is the relationship between eating healthily and calories? <span class=\"toggle-icon inactive sign mbr-iconfont\"></span>\n\t\t\t\t\t\t\t\t\t</h4>\n\n\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div id=\"collapse5\" class=\"panel-collapse noScroll collapse\" data-parent=\"#accordion\" role=\"tabpanel\" aria-labelledby=\"headingFive\">\n\t\t\t\t\t\t\t\t<div class=\"panel-body p-4\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style panel-text mbr-text\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-text\">\n\t\t\t\t\t\t\t\t\t\tLorem Ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, dolorem,\n\t\t\t\t\t\t\t\t\t\tnon. Sunt aliquam a odio, sapiente corporis necessitatibus quia assumenda\n\t\t\t\t\t\t\t\t\t\texpedita tempora error non deserunt beatae ex, eaque voluptatem quas.</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div class=\"card\" mbr-if=\"bootstrapAccordion > 5\">\n\t\t\t\t\t\t\t<div class=\"card-header\" role=\"tab\" id=\"headingSix\">\n\t\t\t\t\t\t\t\t<a role=\"button\" class=\"collapsed panel-title\" data-toggle=\"collapse\" data-core href=\"#collapse6\" aria-expanded=\"false\" aria-controls=\"collapse6\">\n\t\t\t\t\t\t\t\t\t<h4 class=\"mbr-fonts-style header-text\" mbr-theme-style=\"display-7\" data-app-selector=\".header-text\">\n\t\t\t\t\t\t\t\t\t\t6. How can you achieve a healthy diet? <span class=\"toggle-icon inactive sign mbr-iconfont\"></span>\n\t\t\t\t\t\t\t\t\t</h4>\n\n\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div id=\"collapse6\" class=\"panel-collapse noScroll collapse\" data-parent=\"#accordion\" role=\"tabpanel\" aria-labelledby=\"headingSix\">\n\t\t\t\t\t\t\t\t<div class=\"panel-body p-4\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-fonts-style panel-text mbr-text\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-text\">\n\t\t\t\t\t\t\t\t\t\tLorem Ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptates\n\t\t\t\t\t\t\t\t\t\tdolorem, odit enim! Aspernatur quos ipsa, sit! Repudiandae, laboriosam enim\n\t\t\t\t\t\t\t\t\t\taliquam, similique suscipit quas dicta voluptate repellendus distinctio laborum\n\t\t\t\t\t\t\t\t\t\tat!</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
-          "_cid": "t6nODKRNuZ",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "accordion2-49"
         },
         {
           "_name": "extFooter1",
@@ -3711,11 +3373,11 @@
           "_sourceTheme": "medicalm4",
           "_customHTML": "<section class=\"header1 medicalm4_header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" condition=\"fullScreen\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n\t\t<select title=\"Buttons Position\" name=\"justify\">\n\t\t\t<option value=\"1\" selected>Left</option>\n\t\t\t<option value=\"2\">Center</option>\n\t\t\t<option value=\"3\">Right</option>\n\t\t</select>\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<input type=\"checkbox\" title=\"Subtitle Frame\" name=\"showFrame\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\">\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Line\" name=\"showLine\" condition=\"showTitle\">\n\t\t<input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#4f87fb\" condition=\"showLine && showTitle\">\n\t\t<input type=\"range\" inline title=\"Line Width\" name=\"lineWidth\" min=\"0\" max=\"100\" step=\"1\" value=\"22\" condition=\"showLine && showTitle\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" value=\"@PROJECT_PATH@/assets/images/pexels-cottonbro-6528908-2000x1333.jpg\" title=\"Image\" selected>\n\t\t\t<input type=\"color\" value=\"#0087ab\" title=\"Color\">\n\t\t\t<input type=\"video\" value=\"https://www.youtube.com/watch?v=9morbKMwCu4\" title=\"Video\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div class=\"container align-center\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-lg-12\">\n\t\t\t\t<p class=\"mbr-section-subtitle mbr-bold align-left pb-1 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-title .accent-word\">\n\t\t\t\t\tONLINE SOLUTION</p>\n\t\t\t\t<h1 class=\"mbr-section-title align-left mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .separator, .sep-holder\">L'orthodontie</h1>\n\t\t\t\t<div class=\"separator d-flex flex-row flex-nowrap\" mbr-if=\"showLine && showTitle\">\n\t\t\t\t\t<span class=\"sep-holder\" mbr-if=\"showLine && showTitle\">\n\t\t\t\t\t\t<span class=\"sep-line d-block\"></span>\n\t\t\t\t\t</span>\n\t\t\t\t</div>\n\t\t\t\t<p class=\"mbr-text align-left pt-4 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl elit, varius ut magna vel,\n\t\t\t\t\ttincidunt iaculis sem. Interdum\n\t\t\t\t\tet malesuada fames ac ante ipsum primis in faucibus.</p>\n\t\t\t\t<div class=\"mbr-section-btn align-left \" mbr-buttons mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-class=\"{'justify-content-start': justify == 1, 'justify-content-center': justify == 2, 'justify-content-end': justify == 3}\">\n\t\t\t\t\t<a class=\"btn btn-lg btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\t\tCONTACT US</a>\n\t\t\t\t\t<a class=\"content-link link mbr-bold\" href=\"https://mobiri.se\" data-app-selector=\".content-link\">\n\t\t\t\t\t\t<span class=\"mobi-mbri mobi-mbri-gift mbr-iconfont\" data-app-selector=\".content-link\"></span>\n\t\t\t\t\t\tGET FREE CHECKUP\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n\t\t<a href=\"#next\">\n\t\t\t<i class=\"mbri-arrow-down mbr-iconfont\"></i>\n\t\t</a>\n\t</div>\n</section>",
           "_cid": "t422oW0Ktd",
-          "_anchor": "header1-3m",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "header1-3m"
         },
         {
           "alias": false,
@@ -6598,11 +6260,11 @@
           "_sourceTheme": "medicalm4",
           "_customHTML": "<section class=\"header1 medicalm4_header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" condition=\"fullScreen\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n\t\t<select title=\"Buttons Position\" name=\"justify\">\n\t\t\t<option value=\"1\" selected>Left</option>\n\t\t\t<option value=\"2\">Center</option>\n\t\t\t<option value=\"3\">Right</option>\n\t\t</select>\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<input type=\"checkbox\" title=\"Subtitle Frame\" name=\"showFrame\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\">\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Line\" name=\"showLine\" condition=\"showTitle\">\n\t\t<input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#4f87fb\" condition=\"showLine && showTitle\">\n\t\t<input type=\"range\" inline title=\"Line Width\" name=\"lineWidth\" min=\"0\" max=\"100\" step=\"1\" value=\"22\" condition=\"showLine && showTitle\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" value=\"@PROJECT_PATH@/assets/images/pexels-jonathan-borba-4687907-2000x1333.jpg\" title=\"Image\" selected>\n\t\t\t<input type=\"color\" value=\"#0087ab\" title=\"Color\">\n\t\t\t<input type=\"video\" value=\"https://www.youtube.com/watch?v=9morbKMwCu4\" title=\"Video\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div class=\"container align-center\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-lg-12\">\n\t\t\t\t<p class=\"mbr-section-subtitle mbr-bold align-left pb-1 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-title .accent-word\">\n\t\t\t\t\tONLINE SOLUTION</p>\n\t\t\t\t<h1 class=\"mbr-section-title align-left mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .separator, .sep-holder\">La chirurgie implantaire</h1>\n\t\t\t\t<div class=\"separator d-flex flex-row flex-nowrap\" mbr-if=\"showLine && showTitle\">\n\t\t\t\t\t<span class=\"sep-holder\" mbr-if=\"showLine && showTitle\">\n\t\t\t\t\t\t<span class=\"sep-line d-block\"></span>\n\t\t\t\t\t</span>\n\t\t\t\t</div>\n\t\t\t\t<p class=\"mbr-text align-left pt-4 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl elit, varius ut magna vel,\n\t\t\t\t\ttincidunt iaculis sem. Interdum\n\t\t\t\t\tet malesuada fames ac ante ipsum primis in faucibus.</p>\n\t\t\t\t<div class=\"mbr-section-btn align-left \" mbr-buttons mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-class=\"{'justify-content-start': justify == 1, 'justify-content-center': justify == 2, 'justify-content-end': justify == 3}\">\n\t\t\t\t\t<a class=\"btn btn-lg btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\t\tCONTACT US</a>\n\t\t\t\t\t<a class=\"content-link link mbr-bold\" href=\"https://mobiri.se\" data-app-selector=\".content-link\">\n\t\t\t\t\t\t<span class=\"mobi-mbri mobi-mbri-gift mbr-iconfont\" data-app-selector=\".content-link\"></span>\n\t\t\t\t\t\tGET FREE CHECKUP\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n\t\t<a href=\"#next\">\n\t\t\t<i class=\"mbri-arrow-down mbr-iconfont\"></i>\n\t\t</a>\n\t</div>\n</section>",
           "_cid": "t423aonQbN",
-          "_anchor": "header1-3n",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "header1-3n"
         },
         {
           "alias": false,
@@ -12505,7 +12167,7 @@
             }
           },
           "_name": "map1",
-          "_customHTML": "<section class=\"map1\" group=\"Maps\">\n\n    <mbr-parameters>\n        <!-- Block of parameters for component -->\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n        <input type=\"map\" title=\"Map\" name=\"googleMap\" place-id=\"hopital roger salengro lille\" value=\"hopital roger salengro lille\">\n        <!-- End block of parameters -->\n    </mbr-parameters>\n    <div class=\"row mbr-justify-content-center\">\n        <div class=\"map-title col-sm-12 col-md-12 align-center\">\n            <h2 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .map-title\">\n                Full Width Map\n            </h2>\n        </div>\n    </div>\n    <div class=\"google-map\" mbr-map=\"googleMap\"></div>\n</section>",
+          "_customHTML": "<section class=\"map1\" group=\"Maps\">\n\n    <mbr-parameters>\n        <!-- Block of parameters for component -->\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n        <input type=\"map\" title=\"Map\" name=\"googleMap\" place-id=\"2 avenue osacra lambret 59000 lille\" value=\"2 avenue osacra lambret 59000 lille\">\n        <!-- End block of parameters -->\n    </mbr-parameters>\n    <div class=\"row mbr-justify-content-center\">\n        <div class=\"map-title col-sm-12 col-md-12 align-center\">\n            <h2 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .map-title\">\n                Full Width Map\n            </h2>\n        </div>\n    </div>\n    <div class=\"google-map\" mbr-map=\"googleMap\"></div>\n</section>",
           "_anchor": "map1-a",
           "_isUserblock": true,
           "_sourceTheme": "medicalm4",
